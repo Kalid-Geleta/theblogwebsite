@@ -1,0 +1,173 @@
+body{
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+h1{
+    padding:20px;
+}
+header{
+    position: relative;
+    width: 100%;
+}
+.container{
+    max-width: 980px;
+    padding:10px 0;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color:#5c8a8a;
+    border-radius:10px;
+
+
+
+
+}
+nav ul{
+    display:flex;
+
+}
+nav ul li{
+    padding:0.5em;
+    list-style: none;
+    transition:all 100ms ease-in-out;
+}
+.main{
+    
+    display:flex;
+    max-width:980px;
+    margin:10px  auto;
+
+}
+.main1{
+    width:70%;
+
+}
+.main2{
+    margin-left:10px;
+    display:flex;
+    flex-direction: column;
+    gap :20px;
+    width:30%;
+}
+nav ul li a{
+    text-decoration: none;
+}
+li:hover{
+   
+    border-bottom: 1px solid black;
+
+}
+.main21{
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color:grey;
+
+}
+.main22{
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color:grey;
+
+}
+.hum{
+    display: none;
+}
+
+.insidefoot{
+    text-align: center;
+    padding:0 auto;
+    padding-bottom:5em ;
+    background-color:#001a33;
+    color:white;
+
+}
+
+
+@media(max-width:675px){
+    .main22{
+        border-radius:0;
+    }
+    .main21{
+        border-radius:0;
+    }
+    nav{
+        display: none;
+    }
+    .container{
+        border-radius:0;
+    }
+    .hum{
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding:5px;
+        border :1px solid black;
+    
+    
+    }
+    .bar{
+       
+        width:30px;
+        height:5px;
+    margin: 2px auto;
+    background-color: azure;
+    
+    }
+    
+  
+
+    .main{
+    flex-direction:column;
+    
+    }
+    .main1{
+        width:100%;
+    }
+    .main2{
+        margin-left:0;
+        width:100%;
+    }
+   .active .bar:nth-child(2){
+        opacity:0;
+   
+     }
+    .active  .bar:nth-child(1){
+        transform:translateY(9px)  rotate(45deg);
+  
+    }
+   
+    .active .bar:nth-child(3){
+        transform:translateY(-9px) rotate(-45deg);
+    } 
+    
+   nav.active {
+    display: block;
+        width:100%;
+        position:absolute;
+        top:100%;
+        left:0;
+        background-color:burlywood; 
+    } 
+   .active  ul  {
+    
+    
+        margin:0;
+        padding: 0;
+    
+       
+        flex-direction:column;
+     
+    }
+    .active ul li {
+        border:none;
+        text-align:center ;
+        padding:1em;
+        
+    }
+
+    
+
+}
